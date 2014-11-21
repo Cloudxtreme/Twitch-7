@@ -2,6 +2,7 @@ filter:
     excluded_paths:
         - 'vendor/*'
         - 'tests/*'
+        - 'examples/*'
     paths: {  }
 tools:
     php_analyzer:
@@ -13,6 +14,7 @@ tools:
             excluded_paths:
                 - 'vendor/*'
                 - 'tests/*'
+                - 'examples/*'
             paths: {  }
         path_configs: {  }
     php_sim:
@@ -22,6 +24,7 @@ tools:
             excluded_paths:
                 - 'vendor/*'
                 - 'tests/*'
+                - 'examples/*'
             paths: {  }
     php_pdepend:
         enabled: true
@@ -33,4 +36,5 @@ tools:
             excluded_paths:
                 - 'vendor/*'
                 - 'tests/*'
+                - 'examples/*'
             paths: {  }
