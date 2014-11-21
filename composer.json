@@ -1,0 +1,21 @@
+{
+    "name": "gsdevme/twitch",
+    "description": "Unofficial PHP API for Twitch.tv ",
+    "keywords": [
+        "Twitch API",
+        "Twitch",
+        "PHP"
+    ],
+    "autoload": {
+        "psr-0": {
+            "Twitch\\": "src"
+        }
+    },
+    "require": {
+        "guzzle/guzzle": "3.9.*",
+        "gsdevme/stubborn": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.3.*"
+    }
+}
