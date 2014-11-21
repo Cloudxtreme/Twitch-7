@@ -50,7 +50,7 @@ class TwitchStubborn implements StubbornAwareInterface
 
         $request = $this->client->createRequest($method, $url, [
             'Client-ID' => $this->twitch->getClientId(),
-            'Accept' => Twitch::ACCEPT
+            'Accept'    => Twitch::ACCEPT
         ]);
 
         /** @var $response \Guzzle\Http\Message\Response */
