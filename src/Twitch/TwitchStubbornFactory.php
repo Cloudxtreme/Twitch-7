@@ -3,7 +3,6 @@
 namespace Twitch;
 
 use Guzzle\Http\Client;
-use SebastianBergmann\Exporter\Exception;
 
 class TwitchStubbornFactory
 {
@@ -28,6 +27,9 @@ class TwitchStubbornFactory
         return new TwitchStubborn(new Client(), $requestInstance, new Twitch($clientId));
     }
 
+    /**
+     * @param string $request
+     */
     private static function validateRequest($request)
     {
         switch(strtolower($request)){
