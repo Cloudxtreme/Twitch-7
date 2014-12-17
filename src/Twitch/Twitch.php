@@ -5,8 +5,8 @@ namespace Twitch;
 class Twitch
 {
 
-    const URL = 'https://api.twitch.tv/kraken%s';
-    const ACCEPT = 'application/vnd.twitchtv.v2+json';
+    const URL    = 'https://api.twitch.tv/kraken%s';
+    const ACCEPT = 'application/vnd.twitchtv.v3+json';
 
     /**
      * @var string

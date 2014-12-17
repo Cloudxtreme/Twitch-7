@@ -6,6 +6,7 @@ use Guzzle\Http\Client;
 use Stubborn\StubbornAwareInterface;
 use Stubborn\StubbornResponse;
 use Stubborn\StubbornResponseInterface;
+use Guzzle\Http\Exception\ClientErrorResponseException;
 
 class TwitchStubborn implements StubbornAwareInterface
 {
@@ -72,6 +73,11 @@ class TwitchStubborn implements StubbornAwareInterface
      */
     public function getExceptionActionRequest(\Exception $exception)
     {
-        return false;
+        switch (true) {
+            case ($exception instanceof ClientErrorResponseException):
+                return self::STOP_ACTION;
+            default:
+                throw $exception;
+        }
     }
 }

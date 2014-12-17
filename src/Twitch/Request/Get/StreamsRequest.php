@@ -2,7 +2,7 @@
 
 namespace Twitch\Request\Get;
 
-class StreamChannelRequest extends \Twitch\Request\StreamChannelRequest
+class StreamsRequest extends \Twitch\Request\StreamsRequest
 {
 
     /**
